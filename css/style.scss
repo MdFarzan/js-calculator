@@ -35,7 +35,7 @@ body{
     font-size:16px;
 }
 
-#entery{
+#entry{
     position:absolute;
     right:10px;
     top:0px;
@@ -57,7 +57,7 @@ body{
     grid-gap:3px;
 }
 
-.btn{
+.btn, .ctrl, .equal-btn{
     display:block;
     background:$numpad-bg;
     text-align:center;
@@ -77,7 +77,7 @@ body{
 
 }
 
-.opcode{
+.opcode, .equal-btn{
     background:$opcode-bg;
     font-size:2em;
     font-weight:500;
@@ -94,6 +94,6 @@ body{
     cursor:pointer;
 }
 
-.btn:active{
+.btn:active, .equal-btn:active{
     transform:translateY(5px);
 }
