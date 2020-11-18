@@ -5,8 +5,8 @@
 }
 
 //global variables
-$output-bg:#EDF285;
-$opcode-bg:#aaa;
+$output-bg:#fff;
+$opcode-bg:#515151;
 $numpad-bg:#242424;
 $ctrl-bg:#b10e0e;
 body{
@@ -19,26 +19,30 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    background-image:linear-gradient(to right, rgb(39, 191, 191),rgb(35, 179, 132));
 }
 
 #calculator{
     width:400px;
-    background:#f6f6f6;
+    border:5px solid white;
+    box-shadow:5px 5px 15px rgba(0,0,0,0.25);
 }
 
 #output-container{
     width:100%;
-    padding:10px;   
+    padding:10px 15px;   
     background:$output-bg;
     position:relative;
-    height:80px;
+    height:100px;
     font-size:16px;
+    margin-bottom:5px;
 }
+
 
 #entry{
     position:absolute;
     right:10px;
-    top:0px;
+    top:5px;
     font-size:2em;
 }
 
@@ -82,10 +86,12 @@ body{
     font-size:2em;
     font-weight:500;
     transition:100ms;
+    cursor:pointer;
 }
 
 .ctrl{
     background:$ctrl-bg;
+    cursor:pointer;
 }
 
 .btn:hover{
