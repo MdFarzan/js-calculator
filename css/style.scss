@@ -6,7 +6,9 @@
 
 //global variables
 $output-bg:#EDF285;
-
+$opcode-bg:#aaa;
+$numpad-bg:#242424;
+$ctrl-bg:#b10e0e;
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -57,11 +59,12 @@ body{
 
 .btn{
     display:block;
-    background:crimson;
+    background:$numpad-bg;
     text-align:center;
     line-height:80px;
-    font-size:1.4em;
+    font-size:1.7em;
     border-radius:3px;
+    color:white;
 }
 
 [data-value='equal']{
@@ -72,4 +75,25 @@ body{
 [data-value='0']{
     grid-column: 1/3;
 
+}
+
+.opcode{
+    background:$opcode-bg;
+    font-size:2em;
+    font-weight:500;
+    transition:100ms;
+}
+
+.ctrl{
+    background:$ctrl-bg;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+    border:2px solid crimson;
+    cursor:pointer;
+}
+
+.btn:active{
+    transform:translateY(5px);
 }
